@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background-image: url('istockphoto-818517624-612x612.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 400px;
+            margin: 90px 0px 0px 790px;
+            padding: 30px;
+            background-color: #f6f7f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            opacity: 85%;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #06274a;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+
+        input[type="text"], input[type="password"], input[type="email"] {
+        border: 2px solid #0d3054; 
+        padding: 10px; 
+        font-size: 16px;
+        font-weight: bold;
+        }
+
+
+        #heading
+        {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .text
+        {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(3, 4, 33);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="heading">Sign Up to NB's Currency Converter</h2>
+        <form action="/signupsubmit" method="post">
+            <div class="form-group">
+                <label for="name" class="text">First Name:</label>
+                <input type="text" id="name" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="name" class="text">Last Name:</label>
+                <input type="text" id="name" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="text">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="text">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>

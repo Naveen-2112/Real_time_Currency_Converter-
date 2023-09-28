@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+<body>
+    <div >
+        <marquee direction="left" behavior="scroll" scrollamount="5" id="scrolling">
+            Note that there may be up to a 1-hour delay in fetching the latest exchange rates.
+        </marquee>
+
+        <div id="body1">
+            <h2 id="heading">Real Time Currency Converter</h2>
+            
+            <div id="textdiv">
+                <p id="text">Welcome to Naveen's Real-Time Currency Converter! Explore the world of live currency and foreign exchange rates right at your fingertips. With our user-friendly tool, you can effortlessly convert between all major global currencies and access up-to-the-minute exchange rates. Stay informed about the ever-changing financial landscape and make informed decisions for your international transactions. Start your journey today and experience the convenience of real-time currency conversions at your service</p>
+            
+            
+            <p><a href="#" id="toggle-link"><b>Click Here to know The available Currencies and Corresponding Shortcuts</b></a></p>
+            <div id="data" class="hidden-data">
+                <div id="tablediv">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Currency Symbol</th>
+                                <th>Currency Name</th>
+                                <th>Currency Symbol</th>
+                                <th>Currency Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AED</td>
+                                <td>UAE Dirham</td>
+                                <td>AFN</td>
+                                <td>Afghan Afghani</td>
+                            </tr>
+                            <tr>
+                                <td>ALL</td>
+                                <td>Albanian Lek</td>
+                                <td>AMD</td>
+                                <td>Armenian Dram</td>
+                            </tr>
+                            <tr>
+                                <td>ANG</td>
+                                <td>Netherlands Antillean Gulden</td>
+                                <td>AOA</td>
+                                <td>Angolan Kwanza</td>
+                            </tr>
+                            <tr>
+                                <td>ARS</td>
+                                <td>Argentine Peso</td>
+                                <td>AUD</td>
+                                <td>Australian Dollar</td>
+                            </tr>
+                            <tr>
+                                <td>AWG</td>
+                                <td>Aruban Florin</td>
+                                <td>AZN</td>
+                                <td>Azerbaijani Manat</td>
+                            </tr>
+                            <tr>
+                                <td>BAM</td>
+                                <td>Bosnia And Herzegovina Konvertibilna Marka</td>
+                                <td>BBD</td>
+                                <td>Barbadian Dollar</td>
+                            </tr>
+                            <tr>
+                                <td>BDT</td>
+                                <td>Bangladeshi Taka</td>
+                                <td>BGN</td>
+                                <td>Bulgarian Lev</td>
+                            </tr>
+                            <tr>
+                                <td>BHD</td>
+                                <td>Bahraini Dinar</td>
+                                <td>BIF</td>
+                                <td>Burundi Franc</td>
+                            </tr>
+                            <tr>
+                                <td>BMD</td>
+                                <td>Bermudan Dollar</td>
+                                <td>BND</td>
+                                <td>Brunei Dollar</td>
+                            </tr>
+                            <tr>
+                                <td>BOB</td>
+                                <td>Bolivian Boliviano</td>
+                                <td>BRL</td>
+                                <td>Brazilian Real</td>
+                            </tr>
+                            <tr>
+                                <td>BSD</td>
+                                <td>Bahamian Dollar</td>
+                                <td>BTC</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>BTN</td>
+                                <td>Bhutanese Ngultrum</td>
+                                <td>BWP</td>
+                                <td>Botswana Pula</td>
+                            </tr>
+                            <tr>
+                                <td>BYN</td>
+                                <td>New Belarusian Ruble</td>
+                                <td>BYR</td>
+                                <td>Belarusian Ruble</td>
+                            </tr>
+                            <tr>
+                                <td>BZD</td>
+                                <td>Belize Dollar</td>
+                                <td>CAD</td>
+                                <td>Canadian Dollar</td>
+                            </tr>
+                            <tr>
+                                <td>CDF</td>
+                                <td>Congolese Franc</td>
+                                <td>CHF</td>
+                                <td>Swiss Franc</td>
+                            </tr>
+                            <tr>
+                                <td>CLF</td>
+                                <td>Chilean Unit Of Account</td>
+                                <td>CLP</td>
+                                <td>Chilean Peso</td>
+                            </tr>
+                            <tr>
+                                <td>CNY</td>
+                                <td>Chinese Yuan</td>
+                                <td>COP</td>
+                                <td>Colombian Peso</td>
+                            </tr>
+                             <tr>
+                                <td>CRC</td>
+                                <td>Costa Rican Colon</td>
+                                <td>CUC</td>
+                                <td>Cuban Convertible Peso</td>
+                            </tr>
+                            <tr>
+                                <td>CUP</td>
+                                <td>Cuban Peso</td>
+                                <td>CVE</td>
+                                <td>Cape Verdean Escudo</td>
+                            </tr>
+                            <tr>
+                                <td>CZK</td>
+                                <td>Czech Koruna</td>
+                                <td>DJF</td>
+                                <td>Djiboutian Franc</td>
+                            </tr>
+                            <tr>
+                                <td>DKK</td>
+                                <td>Danish Krone</td>
+                                <td>DOP</td>
+                                <td>Dominican Peso</td>
+                            </tr>
+                            <tr>
+                                <td>DZD</td>
+                                <td>Algerian Dinar</td>
+                                <td>EGP</td>
+                                <td>Egyptian Pound</td>
+                            </tr>
+                            <tr>
+                                <td>ERN</td>
+                                <td>Eritrean Nakfa</td>
+                                <td>ETB</td>
+                                <td>Ethiopian Birr</td>
+                            </tr>
+                            <tr>
+                                <td>EUR</td>
+                                <td>Euro</td>
+                                <td>FJD</td>
+                                <td>Fijian Dollar</td>
+                            </tr>
+                            <tr>
+                                <td>FKP</td>
+                                <td>Falkland Islands Pound</td>
+                                <td>GBP</td>
+                                <td>British Pound</td>
+                            </tr>
+                            <tr>
+                                <td>GEL</td>
+                                <td>Georgian Lari</td>
+                                <td>GGP</td>
+                                <td>Guernsey Pound</td>
+                            </tr>
+                            <tr>
+                                <td>GHS</td>
+                                <td>Ghanaian Cedi</td>
+                                <td>GIP</td>
+                                <td>Gibraltar Pound</td>
+                            </tr>
+                            <tr>
+                            <td>GMD</td>
+                            <td>Gambian Dalasi</td>
+                            <td>GNF</td>
+                            <td>Guinean Franc</td>
+                        </tr>
+                        <tr>
+                            <td>GTQ</td>
+                            <td>Guatemalan Quetzal</td>
+                            <td>GYD</td>
+                            <td>Guyanese Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>HKD</td>
+                            <td>Hong Kong Dollar</td>
+                            <td>HNL</td>
+                            <td>Honduran Lempira</td>
+                        </tr>
+                        <tr>
+                            <td>HRK</td>
+                            <td>Croatian Kuna</td>
+                            <td>HTG</td>
+                            <td>Haitian Gourde</td>
+                        </tr>
+                        <tr>
+                            <td>HUF</td>
+                            <td>Hungarian Forint</td>
+                            <td>IDR</td>
+                            <td>Indonesian Rupiah</td>
+                        </tr>
+                        <tr>
+                            <td>ILS</td>
+                            <td>Israeli New Sheqel</td>
+                            <td>IMP</td>
+                            <td>Manx pound</td>
+                        </tr>
+                        <tr>
+                            <td>INR</td>
+                            <td>Indian Rupee</td>
+                            <td>IQD</td>
+                            <td>Iraqi Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>IRR</td>
+                            <td>Iranian Rial</td>
+                            <td>ISK</td>
+                            <td>Icelandic Króna</td>
+                        </tr>
+                        <tr>
+                            <td>JEP</td>
+                            <td>Jersey Pound</td>
+                            <td>JMD</td>
+                            <td>Jamaican Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>JOD</td>
+                            <td>Jordanian Dinar</td>
+                            <td>JPY</td>
+                            <td>Japanese Yen</td>
+                        </tr>
+                        <tr>
+                            <td>KES</td>
+                            <td>Kenyan Shilling</td>
+                            <td>KGS</td>
+                            <td>Kyrgyzstani Som</td>
+                        </tr>
+                        <tr>
+                            <td>KHR</td>
+                            <td>Cambodian Riel</td>
+                            <td>KMF</td>
+                            <td>Comorian Franc</td>
+                        </tr>
+                        <tr>
+                            <td>KPW</td>
+                            <td>North Korean Won</td>
+                            <td>KRW</td>
+                            <td>South Korean Won</td>
+                        </tr>
+                        <tr>
+                            <td>KWD</td>
+                            <td>Kuwaiti Dinar</td>
+                            <td>KYD</td>
+                            <td>Cayman Islands Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>KZT</td>
+                            <td>Kazakhstani Tenge</td>
+                            <td>LAK</td>
+                            <td>Lao Kip</td>
+                        </tr>
+                        <tr>
+                            <td>LBP</td>
+                            <td>Lebanese Lira</td>
+                            <td>LKR</td>
+                            <td>Sri Lankan Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>LRD</td>
+                            <td>Liberian Dollar</td>
+                            <td>LSL</td>
+                            <td>Lesotho Loti</td>
+                        </tr>
+                        <tr>
+                            <td>LVL</td>
+                            <td>Latvian Lats</td>
+                            <td>LYD</td>
+                            <td>Libyan Dinar</td>
+                        </tr>
+                        <tr>
+                            <td>MAD</td>
+                            <td>Moroccan Dirham</td>
+                            <td>MDL</td>
+                            <td>Moldovan Leu</td>
+                        </tr>
+                        <tr>
+                            <td>MGA</td>
+                            <td>Malagasy Ariary</td>
+                            <td>MKD</td>
+                            <td>Macedonian Denar</td>
+                        </tr>
+                        <tr>
+                            <td>MMK</td>
+                            <td>Myanma Kyat</td>
+                            <td>MNT</td>
+                            <td>Mongolian Tugrik</td>
+                        </tr>
+                        <tr>
+                            <td>MOP</td>
+                            <td>Macanese Pataca</td>
+                            <td>MRO</td>
+                            <td>Mauritanian Ouguiya</td>
+                        </tr>
+                        <tr>
+                            <td>MUR</td>
+                            <td>Mauritian Rupee</td>
+                            <td>MVR</td>
+                            <td>Maldivian Rufiyaa</td>
+                        </tr>
+                        <tr>
+                            <td>MWK</td>
+                            <td>Malawian Kwacha</td>
+                            <td>MXN</td>
+                            <td>Mexican Peso</td>
+                        </tr>
+                        <tr>
+                            <td>MYR</td>
+                            <td>Malaysian Ringgit</td>
+                            <td>MZN</td>
+                            <td>Mozambican Metical</td>
+                        </tr>
+                        <tr>
+                            <td>NAD</td>
+                            <td>Namibian Dollar</td>
+                            <td>NGN</td>
+                            <td>Nigerian Naira</td>
+                        </tr>
+                        <tr>
+                            <td>NIO</td>
+                            <td>Nicaraguan Cordoba</td>
+                            <td>NOK</td>
+                            <td>Norwegian Krone</td>
+                        </tr>
+                        <tr>
+                            <td>NPR</td>
+                            <td>Nepalese Rupee</td>
+                            <td>NZD</td>
+                            <td>New Zealand Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>OMR</td>
+                            <td>Omani Rial</td>
+                            <td>PAB</td>
+                            <td>Panamanian Balboa</td>
+                        </tr>
+                        <tr>
+                            <td>PEN</td>
+                            <td>Peruvian Nuevo Sol</td>
+                            <td>PGK</td>
+                            <td>Papua New Guinean Kina</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>Philippine Peso</td>
+                            <td>PKR</td>
+                            <td>Pakistani Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>PLN</td>
+                            <td>Polish Zloty</td>
+                            <td>PYG</td>
+                            <td>Paraguayan Guarani</td>
+                        </tr>
+                        <tr>
+                            <td>QAR</td>
+                            <td>Qatari Riyal</td>
+                            <td>RON</td>
+                            <td>Romanian Leu</td>
+                        </tr>
+                        <tr>
+                            <td>RSD</td>
+                            <td>Serbian Dinar</td>
+                            <td>RUB</td>
+                            <td>Russian Ruble</td>
+                        </tr>
+                        <tr>
+                            <td>RWF</td>
+                            <td>Rwandan Franc</td>
+                            <td>SAR</td>
+                            <td>Saudi Riyal</td>
+                        </tr>
+                        <tr>
+                            <td>SBD</td>
+                            <td>Solomon Islands Dollar</td>
+                            <td>SCR</td>
+                            <td>Seychellois Rupee</td>
+                        </tr>
+                        <tr>
+                            <td>SDG</td>
+                            <td>Sudanese Pound</td>
+                            <td>SEK</td>
+                            <td>Swedish Krona</td>
+                        </tr>
+                        <tr>
+                            <td>SGD</td>
+                            <td>Singapore Dollar</td>
+                            <td>SHP</td>
+                            <td>Saint Helena Pound</td>
+                        </tr>
+                        <tr>
+                            <td>SLL</td>
+                            <td>Sierra Leonean Leone</td>
+                            <td>SOS</td>
+                            <td>Somali Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>SRD</td>
+                            <td>Surinamese Dollar</td>
+                            <td>STD</td>
+                            <td>Sao Tome And Principe Dobra</td>
+                        </tr>
+                        <tr>
+                            <td>SVC</td>
+                            <td>Salvadoran Colón</td>
+                            <td>SYP</td>
+                            <td>Syrian Pound</td>
+                        </tr>
+                        <tr>
+                            <td>SZL</td>
+                            <td>Swazi Lilangeni</td>
+                            <td>THB</td>
+                            <td>Thai Baht</td>
+                        </tr>
+                        <tr>
+                            <td>TJS</td>
+                            <td>Tajikistani Somoni</td>
+                            <td>TMT</td>
+                            <td>Turkmenistan Manat</td>
+                        </tr>
+                        <tr>
+                            <td>TND</td>
+                            <td>Tunisian Dinar</td>
+                            <td>TOP</td>
+                            <td>Paanga</td>
+                        </tr>
+                        <tr>
+                            <td>TRY</td>
+                            <td>Turkish New Lira</td>
+                            <td>TTD</td>
+                            <td>Trinidad and Tobago Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>TWD</td>
+                            <td>New Taiwan Dollar</td>
+                            <td>TZS</td>
+                            <td>Tanzanian Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>UAH</td>
+                            <td>Ukrainian Hryvnia</td>
+                            <td>UGX</td>
+                            <td>Ugandan Shilling</td>
+                        </tr>
+                        <tr>
+                            <td>USD</td>
+                            <td>United States Dollar</td>
+                            <td>UYU</td>
+                            <td>Uruguayan Peso</td>
+                        </tr>
+                        <tr>
+                            <td>UZS</td>
+                            <td>Uzbekistani Som</td>
+                            <td>VEF</td>
+                            <td>Venezuelan Bolivar</td>
+                        </tr>
+                        <tr>
+                            <td>VND</td>
+                            <td>Vietnamese Dong</td>
+                            <td>VUV</td>
+                            <td>Vanuatu Vatu</td>
+                        </tr>
+                        <tr>
+                            <td>WST</td>
+                            <td>Samoan Tala</td>
+                            <td>XAF</td>
+                            <td>Central African CFA Franc</td>
+                        </tr>
+                        <tr>
+                            <td>XAG</td>
+                            <td>Silver (troy ounce)</td>
+                            <td>XCD</td>
+                            <td>East Caribbean Dollar</td>
+                        </tr>
+                        <tr>
+                            <td>XDR</td>
+                            <td>Special Drawing Rights</td>
+                            <td>XOF</td>
+                            <td>West African CFA Franc</td>
+                        </tr>
+                        <tr>
+                            <td>XPF</td>
+                            <td>CFP Franc</td>
+                            <td>YER</td>
+                            <td>Yemeni Rial</td>
+                        </tr>
+                        <tr>
+                            <td>ZAR</td>
+                            <td>South African Rand</td>
+                            <td>ZMK</td>
+                            <td>Old Zambian Kwacha</td>
+                        </tr>
+                        <tr>
+                            <td>ZMW</td>
+                            <td>Zambian Kwacha</td>
+                            <td>ZWL</td>
+                            <td>Zimbabwean Dollar</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="body2">
+            <form id="form1">
+            <div style="text-align: left;">
+            <label for="amount" class="inputtitles">  Amount:</label><br>
+            <input type="number" id="amount" name="amount" required>
+            <br>
+            <label for="from" class="inputtitles">From :</label><br>
+            <input type="text" id="from" name="from" oninput="this.value = this.value.toUpperCase();" required>
+            <br>
+            <label for="to" class="inputtitles">To :</label><br>
+            <input type="text" id="to" name="to" oninput="this.value = this.value.toUpperCase();" required>
+                
+            </div>
+            <div>
+                <input type="submit" value="Convert" id="submit">
+            </div>
+
+            <div id="api-data">
+                
+              </div>
+                
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        const toggleLink = document.getElementById("toggle-link");
+        const data = document.getElementById("data");
+
+        toggleLink.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the link from navigating
+
+            if (data.style.display === "none" || data.style.display === "") {
+                data.style.display = "block";
+                toggleLink.textContent = "Click to Hide the available currencies data";
+            } else {
+                data.style.display = "none";
+                toggleLink.textContent = "Click Here to know The available Currencies and Corresponding Shortcuts";
+            }
+        });
+  toggleLink.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the link from navigating
+
+    if (data.style.display === "none" || data.style.display === "") {
+      data.style.display = "block";
+      toggleLink.textContent = "Click to Hide the available currencies data";
+    } else {
+      data.style.display = "none";
+      toggleLink.textContent = "Click Here to know The available Currencies and Corresponding Shortcuts";
+    }
+  });
+  //API IMPLEMENTATION USING FETCH
+// Select the input elements
+const amountInput = document.getElementById("amount");
+const fromInput = document.getElementById("from");
+const toInput = document.getElementById("to");
+
+// Add an event listener to the form to handle form submission
+document.getElementById("form1").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the form from actually submitting
+
+  // Get the values from the input fields
+  const amount = amountInput.value;
+  const fromCurrency = fromInput.value.toUpperCase();
+  const toCurrency = toInput.value.toUpperCase();
+
+  // Construct the API URL with the user's input
+  const apiUrl = `https://api.api-ninjas.com/v1/convertcurrency?want=${toCurrency}&have=${fromCurrency}&amount=${amount}`;
+  const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+
+  // Make a request to the constructed API URL
+  fetch(apiUrl, {
+    headers: {
+      'X-Api-Key': apiKey,
+    },
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Request failed with status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const apiDataContainer = document.getElementById('api-data');
+      apiDataContainer.innerHTML = `
+      <p>New Amount: ${data.new_amount} ${data.new_currency}</p>  
+      <p>Old Currency: ${data.old_amount} ${data.old_currency}</p>
+      <p> ${data.new_amount} ${toCurrency}  is equal to ${amount} ${fromCurrency} </p>
+      `;
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+});
+
+    </script>
+
+</body>
+</html>
